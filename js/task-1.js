@@ -1,6 +1,6 @@
 function slugify(title) {
   const titleToLowerCase = title.toLowerCase();
-  const words = titleToLowerCase.split();
+  const words = titleToLowerCase.split(' ');
   const slug = words.join('-');
   return slug;
 }
